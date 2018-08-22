@@ -10,7 +10,7 @@ executable_path = {'executable_path': 'chromedriver.exe'}
 browser = Browser('chrome', **executable_path, headless=False)
 
 
-# Defining scrape function & dictionary
+#Defining scrape function & dictionary
 def scrape():
     mars_data = {}
     output = marsNews()
@@ -78,7 +78,7 @@ def marsFacts():
 
 
 
-# Mars Hemispheres
+#Mars Hemispheres
 def marsHem():
     url_hemispheres = "https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
     browser.visit(url_hemispheres)
